@@ -70,3 +70,52 @@
 // let birlashgan = [...massiv1, ...massiv2];
 
 // console.log(birlashgan); 
+
+
+// // 1-masala
+// let foydalanuvchi = { ism: "Ali", yosh: 20 };
+// console.log(`${foydalanuvchi.ism} ${foydalanuvchi.yosh} yoshda`);
+
+// // 2-masala
+// let shahar = { nom: "Toshkent" };
+// shahar.mamlakat = "O'zbekiston";
+// console.log(shahar);
+
+// // 3-masala
+// let avto = { brend: "BMW", rang: "oq" };
+// avto.rang = "qora";
+// console.log(avto);
+
+// // 4-masala
+// let profil = { login: "user1", parol: "12345" };
+// delete profil.parol;
+// console.log(profil);
+
+// // 5-masala
+// let mahsulot = { nom: "Telefon", brend: "Samsung" };
+// console.log("narx" in mahsulot);
+
+// // 6-masala
+// let malumot = { talaba: "Hasan", manzil: { shahar: "Samarqand" } };
+// console.log(malumot.manzil.shahar);
+
+// // 7-masala
+// let kitob = { kitob: "Xamsa", muallif: "Navoiy", yil: 1485 };
+// console.log(Object.keys(kitob));
+
+// // 8-masala
+// let texnika = { noutbuk: "HP", xotira: "512GB" };
+// console.log(Object.values(texnika));
+
+// // 9-masala
+// let obyekt = { a: 10, b: 20 };
+// for (let key in obyekt) {
+//     console.log(`${key}: ${obyekt[key]}`);
+// }
+
+// // 10-masala
+// let odam = { ism: "Vali" };
+// if (!("status" in odam)) {
+//     odam.status = "faol";
+// }
+// console.log(odam);
