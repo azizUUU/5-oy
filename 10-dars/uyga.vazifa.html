@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Vazifalar</title>
+</head>
+<body>
+    <input type="text" id="ismInput" placeholder="Ismingiz">
+    <button onclick="ismTekshir()">Tekshir</button>
+    <p id="ismNatija"></p>
+
+    <input type="password" id="parolInput" placeholder="Parol">
+    <button onclick="parolBahola()">Bahola</button>
+    <p id="parolNatija"></p>
+
+    <script>
+        function ismTekshir() {
+            let ism = document.getElementById("ismInput").value.trim();
+            let p = document.getElementById("ismNatija");
+            if (ism.length < 3) {
+                p.textContent = "Ism juda qisqa";
+            } else {
+                let chiroyliIsm = ism.charAt(0).toUpperCase() + ism.slice(1).toLowerCase();
+                p.textContent = `Salom, ${chiroyliIsm}! Uzunligi: ${ism.length}`;
+            }
+        }
+
+        function parolBahola() {
+            let parol = document.getElementById("parolInput").value;
+            let p = document.getElementById("parolNatija");
+            if (parol.includes(" ")) {
+                p.textContent = "Parolda bo'sh joy bo'lmasligi kerak";
+            } else if (parol.length < 8) {
+                p.textContent = "Zaif";
+            } else {
+                p.textContent = "Yaxshi";
+            }
+        }
+    </script>
+</body>
+</html>
